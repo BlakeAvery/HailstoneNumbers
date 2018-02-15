@@ -11,11 +11,8 @@ public class Hailstone {
                 System.out.print(num + ", ");
             }
             if(num == 1) {
-            	counter++;
-            	if(counter == 2) {
-            		System.out.println("\nProgram done!"); //At a certain point the program should print this and exit, however it prints twice and exits. TODO: Determine why
-            		System.exit(0);
-            	}
+            	System.out.println("\nProgram done!");
+		System.exit(0);
             }
             Calc(num);
         } catch (StackOverflowError e) {
